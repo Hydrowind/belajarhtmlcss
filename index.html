@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arkademy</title>
     <link rel="icon" href="https://www.arkademy.com/img/icons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
     <menu>
@@ -28,10 +29,10 @@
         </div>
       </div>
     </menu>
-    <div class="container">
-
-      <!-- Section 1 -->
-      <section class="flex-row" style="background: linear-gradient(45deg, rgba(30,62,133,1) 0%, rgba(53,112,217,1) 100%);">
+    
+    <!-- Section 1 -->
+    <section style="background: linear-gradient(45deg, rgba(30,62,133,1) 0%, rgba(53,112,217,1) 100%);">
+        <div class="container flex-row">
         <div class="flex-column" style="color: white; justify-content: space-between;">
           <h1 style="color: white;">Fullstack Website Developer</h1>
           <div class="lesson-list">
@@ -51,7 +52,7 @@
             </ul>
           </div>
           <div>
-            <button type="button" class="btn-secondary">
+            <button type="button" class="btn-secondary" id="daftarskrg1">
               Daftar Sekarang
             </button>
           </div>
@@ -60,137 +61,55 @@
           <img
             src="https://assets-arkademy-wesbsite.s3-ap-southeast-1.amazonaws.com/Hero/quickstart-hero-img.jpg"
             alt="image"
+            class="image"
           />
         </div>
+      </div>
       </section>
 
       <!-- Section 2 -->
-      <section class="flex-row" style="justify-content: space-around;">
-        <div style="width: 50%;">
-          <img src="assets/banner2.png" alt="team" />
-        </div>
-
-        <div style="width: 50%; align-self: center;">
-          <h2>Mengerjakan project bersama dengan satu tim</h2>
-          <p style="font-size: 26px; color: grey;">
-            Bangun projek kalian besama rekan satu tim untuk meningkatkan kerja
-            sama dan kolaborasi antar individu.
-          </p>
+      <section>
+        <div class="container flex-row">
+          <div style="width: 50%;">
+            <img src="assets/banner2.png" alt="team" />
+          </div>
+          
+          <div style="width: 50%; align-self: center;">
+            <h2>Mengerjakan project bersama dengan satu tim</h2>
+            <p style="font-size: 26px; color: grey;">
+              Bangun projek kalian besama rekan satu tim untuk meningkatkan kerja
+              sama dan kolaborasi antar individu.
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- Section 3 -->
-      <section class="flex-col">
-        <div>
-          <h2>Fullstack Website Developer</h2>
-          <p>
-            Berikut ini adalah timeline pembelajaran yang akan diterima setiap
-            minggu dalam kelas :
-          </p>
-        </div>
-
-        <div class="flex-row timeline">
-          <h3>1</h3>
-          <div>
-            <h4>Responsive Website</h4>
+      <section>
+        <div style="background: linear-gradient(270deg,#eff4ff 2.5%,hsla(0,0%,100%,.0001) 95.89%);">
+          <div class="container">
+            <h2>Fullstack Website Developer</h2>
             <p>
-              Pada minggu pertama, kalian akan mempelajari HTML, CSS, dan
-              Bootstrap untuk membuat sebuah website yang responsive.
+              Berikut ini adalah timeline pembelajaran yang akan diterima setiap
+              minggu dalam kelas :
             </p>
           </div>
         </div>
-        <div class="flex-row timeline">
-          <h3>2</h3>
-          <div>
-            <h4>JavaScript & Version Control</h4>
-            <p>
-              Pada minggu kedua, kalian akan mempelajari JavaScript & melakukan
-              version control dengan bantuan Git dan GitHub.
-            </p>
-          </div>
-        </div>
-        <div class="flex-row timeline">
-          <h3>3</h3>
-          <div>
-            <h4>Node.js & Express.js</h4>
-            <p>
-              Selanjutnya, kalian akan membangun sebuah RESTful API dengan
-              bantuan Node.js dan Express.js, dan juga menggunakan database
-              MySQL.
-            </p>
-          </div>
-        </div>
-        <div class="flex-row timeline">
-          <h3>4</h3>
-          <div>
-            <h4>Basic Vue.js</h4>
-            <p>
-              Kalian akan mempelajari dasar-dasar dari Vue, memahami
-              komponen-komponen Vue, dan membuat sebuah website dengan Vue.
-            </p>
-          </div>
-        </div>
-        <div class="flex-row timeline">
-          <h3>5</h3>
-          <div>
-            <h4>Backend Lanjutan</h4>
-            <p>
-              Kalian akan belajar menambahkan JWT, Redis dan upload file pada
-              RESTful API yang sebelumnya telah kalian buat.
-            </p>
-          </div>
-        </div>
-        <div class="flex-row timeline">
-          <h3>6</h3>
-          <div>
-            <h4>Vue.js Lanjutan</h4>
-            <p>
-              Pada minggu keenam ini, kalian akan memperdalam Vue dengan
-              mempelajari Localstorage, Vuex, Mixins, dan lain-lain.
-            </p>
-          </div>
-        </div>
-        <div class="flex-row timeline">
-          <h3>7</h3>
-          <div>
-            <h4>Project Team</h4>
-            <p>
-              Kalian akan dibagi ke dalam beberapa kelompok dan diberikan tugas
-              untuk membuat sebuah aplikasi website dengan menggunakan SCRUM dan
-              mengaplikasikan semua yang telah dipelajari sebelumnya.
-            </p>
-          </div>
-        </div>
-        <div class="flex-row timeline">
-          <h3>8</h3>
-          <div>
-            <h4>Realtime</h4>
-            <p>
-              Kalian akan membuat aplikasi website yang menerapkan realtime
-              connection di dalamnya dengan menggunakan Firebase.
-            </p>
-          </div>
-        </div>
-
-        <div class="flex-row timeline">
-          <h3>9</h3>
-          <div>
-            <h4>Final Project Team</h4>
-            <p>
-              Kalian akan kembali dibagi ke dalam beberapa kelompok, diberi
-              tantangan untuk membuat aplikasi baru dengan ide bisnis di
-              dalamnya, dan juga dengan menerapkan semua yang telah dipelajari
-            </p>
-          </div>
+        
+        <div class="container">
+          <div id="timeline-panel"></div>
         </div>
       </section>
 
-      <section class="flex-col" style="align-items: center; background-color: rgb(255, 243, 228);">
-        <h2 style="text-align: center;">Siap Ubah Masa Depanmu?</h2>
-        <div">
-          <button type="button" class="btn-secondary">
-            Daftar Sekarang
-          </button>
+      <!-- Section 4 -->
+      <section style="background-color: rgb(255, 243, 228);">
+        <div class="container flex-col" style="align-items: center;">
+          <h2 style="text-align: center;">Siap Ubah Masa Depanmu?</h2>
+          <div">
+            <button type="button" class="btn-secondary" onclick="showAlert()">
+              Daftar Sekarang
+            </button>
+          </div>
         </div>
       </section>
 
@@ -239,6 +158,10 @@
           </div>
         </div>
       </footer>
-    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
