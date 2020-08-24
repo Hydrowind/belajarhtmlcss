@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #3e3f42;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 0%;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 20px 0;
+}
+h2 {
+  font-size: 36px;
+}
+h6 {
+  font-size: 16px;
+}
+
+section {
+  padding: 50px 10%;
+  margin-top: 50px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+}
+
+menu {
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid rgb(235, 235, 235);
+}
+
+#menu {
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+menu * {
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+  color: #1851b7;
+}
+
+.btn-plain {
+  padding: 10px 20px;
+  background-color: white;
+  color: #1851b7;
+  border: 1px solid #1851b7;
+  border-radius: 5px;
+}
+
+.btn-plain:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.btn-primary:hover {
+  background-color: #1447a0;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background-color: #1851b7;
+  color: white;
+  border: 1px solid #1851b7;
+  border-radius: 5px;
+}
+
+.btn-secondary {
+  padding: 16px 24px;
+  background-color: darkorange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-secondary:hover {
+  background-color: rgb(233, 129, 3);
+}
+
+.lesson-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.lesson-list ul li {
+  margin: 20px;
+  font-size: 22px;
+  color: darkorange;
+}
+
+.lesson-list ul li span {
+  color: white;
+}
+
+.timeline {
+  align-content: flex-start;
+}
+
+.timeline h3 {
+  width: 10%;
+  color: #1851b7;
+  font-size: 60px;
+}
+.timeline div {
+  width: 90%;
+  font-size: 22px;
+}
+.timeline div h4 {
+  color: darkorange;
+  font-size: 26px;
+}
+
+footer {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 14px;
+}
+
+footer #footer {
+  margin-top: 80px;
+}
+footer #copyright {
+  border-top: 1px solid rgb(235, 235, 235);
+  margin-top: 50px;
+}
+
+#footer ul {
+  padding: 0px;
+  list-style: none;
+}
+
+#footer ul li {
+  margin: 10px 0;
+}
+
+#copyright div p {
+  margin-right: 20px;
+  display: inline-block;
+}
