@@ -3,13 +3,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arkademy</title>
-    <link rel="icon" href="https://www.arkademy.com/img/icons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="icon"
+      href="https://www.arkademy.com/img/icons/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
     <menu>
-      <div id="menu">
+      <div>
         <img
           src="https://www.arkademy.com/img/logo%20arkademy.1c82cf5c.svg"
           alt="logo"
@@ -17,10 +27,10 @@
         />
         <nav>
           <ul>
-            <li>Dukungan</li>
-            <li>Kelas</li>
-            <li>FAQ</li>
-            <li>Rekrut Talent</li>
+            <li><a href="#">Dukungan</a></li>
+            <li><a href="#">Kelas</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Rekrut Talent</a></li>
           </ul>
         </nav>
         <div>
@@ -29,12 +39,12 @@
         </div>
       </div>
     </menu>
-    
+
     <!-- Section 1 -->
-    <section style="background: linear-gradient(45deg, rgba(30,62,133,1) 0%, rgba(53,112,217,1) 100%);">
-        <div class="container flex-row">
-        <div class="flex-column" style="color: white; justify-content: space-between;">
-          <h1 style="color: white;">Fullstack Website Developer</h1>
+    <section id="section1">
+      <div class="container">
+        <div class="lesson">
+          <h1>Fullstack Website Developer</h1>
           <div class="lesson-list">
             <ul>
               <li><span>Responsive Website</span></li>
@@ -65,103 +75,116 @@
           />
         </div>
       </div>
-      </section>
+    </section>
 
-      <!-- Section 2 -->
-      <section>
-        <div class="container flex-row">
-          <div style="width: 50%;">
-            <img src="assets/banner2.png" alt="team" />
-          </div>
-          
-          <div style="width: 50%; align-self: center;">
-            <h2>Mengerjakan project bersama dengan satu tim</h2>
-            <p style="font-size: 26px; color: grey;">
-              Bangun projek kalian besama rekan satu tim untuk meningkatkan kerja
-              sama dan kolaborasi antar individu.
-            </p>
-          </div>
+    <!-- Section 2 -->
+    <section id="section2">
+      <div class="container">
+        <div>
+          <img src="assets/banner2.png" alt="team" />
         </div>
-      </section>
 
-      <!-- Section 3 -->
-      <section>
-        <div style="background: linear-gradient(270deg,#eff4ff 2.5%,hsla(0,0%,100%,.0001) 95.89%);">
-          <div class="container">
-            <h2>Fullstack Website Developer</h2>
-            <p>
-              Berikut ini adalah timeline pembelajaran yang akan diterima setiap
-              minggu dalam kelas :
-            </p>
-          </div>
-        </div>
-        
-        <div class="container">
-          <div id="timeline-panel"></div>
-        </div>
-      </section>
-
-      <!-- Section 4 -->
-      <section style="background-color: rgb(255, 243, 228);">
-        <div class="container flex-col" style="align-items: center;">
-          <h2 style="text-align: center;">Siap Ubah Masa Depanmu?</h2>
-          <div">
-            <button type="button" class="btn-secondary" onclick="showAlert()">
-              Daftar Sekarang
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <footer class="flex-col">
-        <div id="footer" class="flex-row" style="justify-content: space-between;">
-
-          <div style="width: 25%;">
-            <img
-          src="https://www.arkademy.com/img/logo%20arkademy.1c82cf5c.svg"
-          alt="logo"
-          width="100px"
-          />
+        <div>
+          <h2>Mengerjakan project bersama dengan teman satu tim</h2>
           <p>
-            Arkademy bertekad untuk mencetak sumber daya manusia yang berkualitas dalam menghadapi perkembangan digital sehingga siap memasuki dunia kerja.
+            Bangun projek kalian besama rekan satu tim untuk meningkatkan kerja
+            sama dan kolaborasi antar individu.
           </p>
         </div>
-        <div class="flex-row" style="width: 50%; justify-content: space-around;">
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="section3">
+      <div class="title">
+        <div class="container">
+          <h2>Fullstack Website Developer</h2>
+          <p>
+            Berikut ini adalah timeline pembelajaran yang akan diterima setiap
+            minggu dalam kelas :
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div id="timeline-panel"></div>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section id="section4">
+      <div class="container">
+        <h2>Siap Ubah Masa Depanmu?</h2>
+        <button type="button" class="btn-secondary" onclick="showAlert()">
+          Daftar Sekarang
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div id="footer-menu">
           <div>
-            <h6>Produk kami</h6>
-            <ul>
-            <li>Modul Belajar</li>
-          </ul>
+            <img
+              src="https://www.arkademy.com/img/logo%20arkademy.1c82cf5c.svg"
+              alt="logo"
+              width="100px"
+            />
+            <p>
+              Arkademy bertekad untuk mencetak sumber daya manusia yang
+              berkualitas dalam menghadapi perkembangan digital sehingga siap
+              memasuki dunia kerja.
+            </p>
+          </div>
+          <div>
+            <div>
+              <h6>Produk kami</h6>
+              <ul>
+                <li>Modul Belajar</li>
+              </ul>
+            </div>
+            <div>
+              <h6>Informasi Lain</h6>
+              <ul>
+                <li>Masuk</li>
+                <li>Daftar</li>
+              </ul>
+            </div>
+            <div>
+              <h6>Social Media</h6>
+              <ul>
+                <li>🖼 Instagram</li>
+                <li>🎭 Facebook</li>
+                <li>🎞 YouTube</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div>
-          <h6>Informasi Lain</h6>
-          <ul>
-            <li>Masuk</li>
-            <li>Daftar</li>
-          </ul>
-        </div>
-        <div>
-          <h6>Social Media</h6>
-          <ul>
-            <li>🖼 Instagram</li>
-            <li>🎭 Facebook</li>
-            <li>🎞 YouTube</li>
-          </ul>
-        </div>
-      </div>
-      </div>
-        <div id="copyright" class="flex-row" style="justify-content: space-between;">
+        <div id="footer-copyright">
           <p>© <b>2019 Arkademy.</b> All Rights Reserved</p>
           <div>
             <p>📞 +628111848182</p>
             <p>📧 hello@arkademy.com</p>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>

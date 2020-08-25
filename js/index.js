@@ -55,16 +55,18 @@ const TIMELINE_DATA = [
   },
 ];
 
-function createTimelineElement(week, title, description) {
+function createTimelineDOM(week, title, description) {
   let timelineElement = document.createElement("div");
-  timelineElement.className = "flex-row timeline";
+  timelineElement.className = "timeline";
 
+  let div = document.createElement("div");
   let el;
   el = document.createElement("h3");
   el.innerHTML = week;
-  timelineElement.appendChild(el);
+  div.appendChild(el);
+  timelineElement.appendChild(div);
 
-  let div = document.createElement("div");
+  div = document.createElement("div");
   el = document.createElement("h4");
   el.innerHTML = title;
   div.appendChild(el);
@@ -77,9 +79,17 @@ function createTimelineElement(week, title, description) {
   return timelineElement;
 }
 
+function getName(param) {
+  fetch("https://jsonplaceholder.typicode.com/posts")
+    .then((response) => response.json())
+    .then((result) => console.log(result));
+}
+
+getName();
+
 let timelineEl = document.querySelector("#timeline-panel");
 for (let data of TIMELINE_DATA) {
-  let tl = createTimelineElement(data.week, data.title, data.description);
+  let tl = createTimelineDOM(data.week, data.title, data.description);
   timelineEl.appendChild(tl);
 }
 
